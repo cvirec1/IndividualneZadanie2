@@ -48,7 +48,6 @@
     <Compile Include="Country.cs" />
     <Compile Include="FileData.cs" />
     <Compile Include="LoadCountry.cs" />
-    <Compile Include="MainViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Runner.cs" />
     <Compile Include="RunRace.cs" />

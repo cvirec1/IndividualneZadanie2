@@ -7,14 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using FinishLine.Core;
 namespace FinishLine
 {
     public partial class RaceView : Form
     {
         public RaceView()
         {
+            string pathfile = @"C:\Users\Public\Documents\data.txt";
             InitializeComponent();
+            RunRace newRunRace = new RunRace();
+            DateTime time = new DateTime();
+            newRunRace.StartRace(FileData.LoadRunnerList(pathfile), time);
+            
+            //dgwRaceLap.DataSource = FileData.LoadRunnerList(pathfile).Values.ToList<Runner>();            
         }
     }
 }

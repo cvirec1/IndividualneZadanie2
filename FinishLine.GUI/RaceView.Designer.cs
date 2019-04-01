@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dgwRunner = new System.Windows.Forms.DataGridView();
+            this.dgwRaceLap = new System.Windows.Forms.DataGridView();
             this.colID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colSurname = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -38,23 +38,23 @@
             this.lbWrite = new System.Windows.Forms.Label();
             this.txbID = new System.Windows.Forms.TextBox();
             this.btnWriteTime = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dgwRunner)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgwRaceLap)).BeginInit();
             this.SuspendLayout();
             // 
-            // dgwRunner
+            // dgwRaceLap
             // 
-            this.dgwRunner.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgwRunner.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgwRaceLap.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgwRaceLap.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colID,
             this.colName,
             this.colSurname,
             this.colAge,
             this.colGender,
             this.colCountry});
-            this.dgwRunner.Location = new System.Drawing.Point(12, 68);
-            this.dgwRunner.Name = "dgwRunner";
-            this.dgwRunner.Size = new System.Drawing.Size(642, 236);
-            this.dgwRunner.TabIndex = 2;
+            this.dgwRaceLap.Location = new System.Drawing.Point(12, 68);
+            this.dgwRaceLap.Name = "dgwRaceLap";
+            this.dgwRaceLap.Size = new System.Drawing.Size(642, 236);
+            this.dgwRaceLap.TabIndex = 2;
             // 
             // colID
             // 
@@ -123,10 +123,10 @@
             this.Controls.Add(this.btnWriteTime);
             this.Controls.Add(this.txbID);
             this.Controls.Add(this.lbWrite);
-            this.Controls.Add(this.dgwRunner);
+            this.Controls.Add(this.dgwRaceLap);
             this.Name = "RaceView";
             this.Text = "RaceView";
-            ((System.ComponentModel.ISupportInitialize)(this.dgwRunner)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgwRaceLap)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -134,7 +134,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dgwRunner;
+        private System.Windows.Forms.DataGridView dgwRaceLap;
         private System.Windows.Forms.DataGridViewTextBoxColumn colID;
         private System.Windows.Forms.DataGridViewTextBoxColumn colName;
         private System.Windows.Forms.DataGridViewTextBoxColumn colSurname;
