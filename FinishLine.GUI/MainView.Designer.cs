@@ -222,6 +222,8 @@
             this.tbxSurname.Name = "tbxSurname";
             this.tbxSurname.Size = new System.Drawing.Size(100, 20);
             this.tbxSurname.TabIndex = 8;
+            this.tbxSurname.TextChanged += new System.EventHandler(this.tbxSurname_TextChanged);
+            this.tbxSurname.Leave += new System.EventHandler(this.tbxSurname_Leave);
             // 
             // tbxName
             // 
@@ -229,6 +231,8 @@
             this.tbxName.Name = "tbxName";
             this.tbxName.Size = new System.Drawing.Size(100, 20);
             this.tbxName.TabIndex = 7;
+            this.tbxName.TextChanged += new System.EventHandler(this.tbxName_TextChanged);
+            this.tbxName.Leave += new System.EventHandler(this.tbxName_Leave);
             // 
             // panel1
             // 

@@ -243,5 +243,53 @@ namespace FinishLine
             runRace.RunnerList = FileData.LoadRunnerList(pathfile);
             dgwRunner.DataSource = FileData.LoadRunnerList(pathfile).Values.ToList<Runner>();
         }
+
+        private void tbxName_TextChanged(object sender, EventArgs e)
+        {
+            if (tbxName.Text == "")
+            {
+                tbxName.BackColor = Color.Red;
+            }
+            else
+            {
+                tbxName.BackColor = Color.Green;
+            }
+        }
+
+        private void tbxName_Leave(object sender, EventArgs e)
+        {
+            if (tbxName.Text == "")
+            {
+                tbxName.BackColor = Color.Red;
+            }
+            else
+            {
+                tbxName.BackColor = Color.Green;
+            }
+        }
+
+        private void tbxSurname_TextChanged(object sender, EventArgs e)
+        {
+            if (tbxSurname.Text == "")
+            {
+                tbxSurname.BackColor = Color.Red;
+            }
+            else
+            {
+                tbxSurname.BackColor = Color.Green;
+            }
+        }
+
+        private void tbxSurname_Leave(object sender, EventArgs e)
+        {
+            if (tbxSurname.Text == "")
+            {
+                tbxSurname.BackColor = Color.Red;
+            }
+            else
+            {
+                tbxSurname.BackColor = Color.Green;
+            }
+        }
     }
 }
