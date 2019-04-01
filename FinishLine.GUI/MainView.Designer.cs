@@ -1,6 +1,6 @@
 ﻿namespace FinishLine
 {
-    partial class MainView
+    partial class Form1
     {
         /// <summary>
         /// Required designer variable.
@@ -29,244 +29,116 @@
         private void InitializeComponent()
         {
             this.tabMain = new System.Windows.Forms.TabControl();
-            this.tpgAge = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.lbName = new System.Windows.Forms.Label();
-            this.lbSurname = new System.Windows.Forms.Label();
-            this.lbAge = new System.Windows.Forms.Label();
-            this.lbCountry = new System.Windows.Forms.Label();
-            this.lbGender = new System.Windows.Forms.Label();
-            this.cbxCountry = new System.Windows.Forms.ComboBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.rbMale = new System.Windows.Forms.RadioButton();
-            this.rbFemale = new System.Windows.Forms.RadioButton();
-            this.tbxName = new System.Windows.Forms.TextBox();
-            this.tbxSurname = new System.Windows.Forms.TextBox();
-            this.chbID = new System.Windows.Forms.CheckBox();
-            this.nupdAge = new System.Windows.Forms.NumericUpDown();
-            this.lbID = new System.Windows.Forms.Label();
+            this.tabCreate = new System.Windows.Forms.TabPage();
+            this.btnCreate = new System.Windows.Forms.Button();
             this.nupdID = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.label1 = new System.Windows.Forms.Label();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.lbID = new System.Windows.Forms.Label();
+            this.nupdAge = new System.Windows.Forms.NumericUpDown();
+            this.chbID = new System.Windows.Forms.CheckBox();
+            this.tbxSurname = new System.Windows.Forms.TextBox();
+            this.tbxName = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.rbFemale = new System.Windows.Forms.RadioButton();
+            this.rbMale = new System.Windows.Forms.RadioButton();
+            this.cbxCountry = new System.Windows.Forms.ComboBox();
+            this.lbGender = new System.Windows.Forms.Label();
+            this.lbCountry = new System.Windows.Forms.Label();
+            this.lbAge = new System.Windows.Forms.Label();
+            this.lbSurname = new System.Windows.Forms.Label();
+            this.lbName = new System.Windows.Forms.Label();
+            this.tabEdit = new System.Windows.Forms.TabPage();
+            this.txbEditID = new System.Windows.Forms.TextBox();
+            this.lbEditRunner = new System.Windows.Forms.Label();
+            this.btnCheck = new System.Windows.Forms.Button();
+            this.btnEdit = new System.Windows.Forms.Button();
+            this.nupAgeEdit = new System.Windows.Forms.NumericUpDown();
+            this.txbSurnameEdit = new System.Windows.Forms.TextBox();
+            this.txbNameEdit = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.rbFemaleEdit = new System.Windows.Forms.RadioButton();
+            this.rbMaleEdit = new System.Windows.Forms.RadioButton();
+            this.cbxCountryEdit = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.btnEdit = new System.Windows.Forms.Button();
-            this.btnCreate = new System.Windows.Forms.Button();
+            this.tabDelete = new System.Windows.Forms.TabPage();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.txbDelete = new System.Windows.Forms.TextBox();
+            this.lbDelete = new System.Windows.Forms.Label();
+            this.btnDeleteCheck = new System.Windows.Forms.Button();
+            this.dgwRunner = new System.Windows.Forms.DataGridView();
+            this.colID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colSurname = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colAge = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colGender = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colCountry = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colLap = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colWin = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.toolStripNewRace = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSaveRace = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripLoadRace = new System.Windows.Forms.ToolStripMenuItem();
             this.tabMain.SuspendLayout();
-            this.tpgAge.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nupdAge)).BeginInit();
+            this.tabCreate.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nupdID)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nupdAge)).BeginInit();
+            this.panel1.SuspendLayout();
+            this.tabEdit.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nupAgeEdit)).BeginInit();
             this.panel2.SuspendLayout();
+            this.tabDelete.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgwRunner)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabMain
             // 
-            this.tabMain.Controls.Add(this.tpgAge);
-            this.tabMain.Controls.Add(this.tabPage2);
-            this.tabMain.Location = new System.Drawing.Point(12, 33);
+            this.tabMain.Controls.Add(this.tabCreate);
+            this.tabMain.Controls.Add(this.tabEdit);
+            this.tabMain.Controls.Add(this.tabDelete);
+            this.tabMain.Cursor = System.Windows.Forms.Cursors.SizeAll;
+            this.tabMain.Location = new System.Drawing.Point(12, 27);
             this.tabMain.Name = "tabMain";
             this.tabMain.SelectedIndex = 0;
-            this.tabMain.Size = new System.Drawing.Size(414, 241);
+            this.tabMain.Size = new System.Drawing.Size(414, 262);
             this.tabMain.TabIndex = 0;
             // 
-            // tpgAge
+            // tabCreate
             // 
-            this.tpgAge.Controls.Add(this.btnCreate);
-            this.tpgAge.Controls.Add(this.nupdID);
-            this.tpgAge.Controls.Add(this.lbID);
-            this.tpgAge.Controls.Add(this.nupdAge);
-            this.tpgAge.Controls.Add(this.chbID);
-            this.tpgAge.Controls.Add(this.tbxSurname);
-            this.tpgAge.Controls.Add(this.tbxName);
-            this.tpgAge.Controls.Add(this.panel1);
-            this.tpgAge.Controls.Add(this.cbxCountry);
-            this.tpgAge.Controls.Add(this.lbGender);
-            this.tpgAge.Controls.Add(this.lbCountry);
-            this.tpgAge.Controls.Add(this.lbAge);
-            this.tpgAge.Controls.Add(this.lbSurname);
-            this.tpgAge.Controls.Add(this.lbName);
-            this.tpgAge.Location = new System.Drawing.Point(4, 22);
-            this.tpgAge.Name = "tpgAge";
-            this.tpgAge.Padding = new System.Windows.Forms.Padding(3);
-            this.tpgAge.Size = new System.Drawing.Size(406, 215);
-            this.tpgAge.TabIndex = 0;
-            this.tpgAge.Text = "Create Runner";
-            this.tpgAge.UseVisualStyleBackColor = true;
+            this.tabCreate.Controls.Add(this.btnCreate);
+            this.tabCreate.Controls.Add(this.nupdID);
+            this.tabCreate.Controls.Add(this.lbID);
+            this.tabCreate.Controls.Add(this.nupdAge);
+            this.tabCreate.Controls.Add(this.chbID);
+            this.tabCreate.Controls.Add(this.tbxSurname);
+            this.tabCreate.Controls.Add(this.tbxName);
+            this.tabCreate.Controls.Add(this.panel1);
+            this.tabCreate.Controls.Add(this.cbxCountry);
+            this.tabCreate.Controls.Add(this.lbGender);
+            this.tabCreate.Controls.Add(this.lbCountry);
+            this.tabCreate.Controls.Add(this.lbAge);
+            this.tabCreate.Controls.Add(this.lbSurname);
+            this.tabCreate.Controls.Add(this.lbName);
+            this.tabCreate.Location = new System.Drawing.Point(4, 22);
+            this.tabCreate.Name = "tabCreate";
+            this.tabCreate.Padding = new System.Windows.Forms.Padding(3);
+            this.tabCreate.Size = new System.Drawing.Size(406, 236);
+            this.tabCreate.TabIndex = 0;
+            this.tabCreate.Text = "Create Runner";
+            this.tabCreate.UseVisualStyleBackColor = true;
             // 
-            // tabPage2
+            // btnCreate
             // 
-            this.tabPage2.Controls.Add(this.btnEdit);
-            this.tabPage2.Controls.Add(this.numericUpDown1);
-            this.tabPage2.Controls.Add(this.label1);
-            this.tabPage2.Controls.Add(this.numericUpDown2);
-            this.tabPage2.Controls.Add(this.checkBox1);
-            this.tabPage2.Controls.Add(this.textBox1);
-            this.tabPage2.Controls.Add(this.textBox2);
-            this.tabPage2.Controls.Add(this.panel2);
-            this.tabPage2.Controls.Add(this.comboBox1);
-            this.tabPage2.Controls.Add(this.label2);
-            this.tabPage2.Controls.Add(this.label3);
-            this.tabPage2.Controls.Add(this.label4);
-            this.tabPage2.Controls.Add(this.label5);
-            this.tabPage2.Controls.Add(this.label6);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(406, 215);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Edit Runner";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // lbName
-            // 
-            this.lbName.AutoSize = true;
-            this.lbName.Location = new System.Drawing.Point(20, 25);
-            this.lbName.Name = "lbName";
-            this.lbName.Size = new System.Drawing.Size(41, 13);
-            this.lbName.TabIndex = 0;
-            this.lbName.Text = "Name :";
-            // 
-            // lbSurname
-            // 
-            this.lbSurname.AutoSize = true;
-            this.lbSurname.Location = new System.Drawing.Point(20, 80);
-            this.lbSurname.Name = "lbSurname";
-            this.lbSurname.Size = new System.Drawing.Size(55, 13);
-            this.lbSurname.TabIndex = 1;
-            this.lbSurname.Text = "Surname :";
-            // 
-            // lbAge
-            // 
-            this.lbAge.AutoSize = true;
-            this.lbAge.Location = new System.Drawing.Point(20, 124);
-            this.lbAge.Name = "lbAge";
-            this.lbAge.Size = new System.Drawing.Size(32, 13);
-            this.lbAge.TabIndex = 2;
-            this.lbAge.Text = "Age :";
-            // 
-            // lbCountry
-            // 
-            this.lbCountry.AutoSize = true;
-            this.lbCountry.Location = new System.Drawing.Point(255, 89);
-            this.lbCountry.Name = "lbCountry";
-            this.lbCountry.Size = new System.Drawing.Size(87, 13);
-            this.lbCountry.TabIndex = 3;
-            this.lbCountry.Text = "Choose country :";
-            // 
-            // lbGender
-            // 
-            this.lbGender.AutoSize = true;
-            this.lbGender.Location = new System.Drawing.Point(255, 25);
-            this.lbGender.Name = "lbGender";
-            this.lbGender.Size = new System.Drawing.Size(85, 13);
-            this.lbGender.TabIndex = 4;
-            this.lbGender.Text = "Choose gender :";
-            // 
-            // cbxCountry
-            // 
-            this.cbxCountry.FormattingEnabled = true;
-            this.cbxCountry.Location = new System.Drawing.Point(258, 124);
-            this.cbxCountry.Name = "cbxCountry";
-            this.cbxCountry.Size = new System.Drawing.Size(121, 21);
-            this.cbxCountry.TabIndex = 5;
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.rbFemale);
-            this.panel1.Controls.Add(this.rbMale);
-            this.panel1.Location = new System.Drawing.Point(258, 42);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(121, 44);
-            this.panel1.TabIndex = 6;
-            // 
-            // rbMale
-            // 
-            this.rbMale.AutoSize = true;
-            this.rbMale.Location = new System.Drawing.Point(4, 4);
-            this.rbMale.Name = "rbMale";
-            this.rbMale.Size = new System.Drawing.Size(48, 17);
-            this.rbMale.TabIndex = 0;
-            this.rbMale.TabStop = true;
-            this.rbMale.Text = "Male";
-            this.rbMale.UseVisualStyleBackColor = true;
-            // 
-            // rbFemale
-            // 
-            this.rbFemale.AutoSize = true;
-            this.rbFemale.Location = new System.Drawing.Point(4, 24);
-            this.rbFemale.Name = "rbFemale";
-            this.rbFemale.Size = new System.Drawing.Size(59, 17);
-            this.rbFemale.TabIndex = 1;
-            this.rbFemale.TabStop = true;
-            this.rbFemale.Text = "Female";
-            this.rbFemale.UseVisualStyleBackColor = true;
-            // 
-            // tbxName
-            // 
-            this.tbxName.Location = new System.Drawing.Point(89, 22);
-            this.tbxName.Name = "tbxName";
-            this.tbxName.Size = new System.Drawing.Size(100, 20);
-            this.tbxName.TabIndex = 7;
-            // 
-            // tbxSurname
-            // 
-            this.tbxSurname.Location = new System.Drawing.Point(89, 77);
-            this.tbxSurname.Name = "tbxSurname";
-            this.tbxSurname.Size = new System.Drawing.Size(100, 20);
-            this.tbxSurname.TabIndex = 8;
-            // 
-            // chbID
-            // 
-            this.chbID.AutoSize = true;
-            this.chbID.Location = new System.Drawing.Point(258, 170);
-            this.chbID.Name = "chbID";
-            this.chbID.Size = new System.Drawing.Size(85, 17);
-            this.chbID.TabIndex = 10;
-            this.chbID.Text = "Choose ID ?";
-            this.chbID.UseVisualStyleBackColor = true;
-            this.chbID.CheckedChanged += new System.EventHandler(this.chbID_CheckedChanged);
-            // 
-            // nupdAge
-            // 
-            this.nupdAge.Location = new System.Drawing.Point(89, 122);
-            this.nupdAge.Minimum = new decimal(new int[] {
-            18,
-            0,
-            0,
-            0});
-            this.nupdAge.Name = "nupdAge";
-            this.nupdAge.Size = new System.Drawing.Size(100, 20);
-            this.nupdAge.TabIndex = 11;
-            this.nupdAge.Value = new decimal(new int[] {
-            18,
-            0,
-            0,
-            0});
-            // 
-            // lbID
-            // 
-            this.lbID.AutoSize = true;
-            this.lbID.Location = new System.Drawing.Point(20, 170);
-            this.lbID.Name = "lbID";
-            this.lbID.Size = new System.Drawing.Size(63, 13);
-            this.lbID.TabIndex = 12;
-            this.lbID.Text = "Choose ID :";
-            this.lbID.Visible = false;
+            this.btnCreate.Location = new System.Drawing.Point(303, 186);
+            this.btnCreate.Name = "btnCreate";
+            this.btnCreate.Size = new System.Drawing.Size(75, 23);
+            this.btnCreate.TabIndex = 14;
+            this.btnCreate.Text = "Create";
+            this.btnCreate.UseVisualStyleBackColor = true;
+            this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
             // 
             // nupdID
             // 
@@ -290,124 +162,282 @@
             0,
             0});
             this.nupdID.Visible = false;
+            this.nupdID.ValueChanged += new System.EventHandler(this.nupdID_ValueChanged);
             // 
-            // numericUpDown1
+            // lbID
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(92, 159);
-            this.numericUpDown1.Maximum = new decimal(new int[] {
-            999,
-            0,
-            0,
-            0});
-            this.numericUpDown1.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(100, 20);
-            this.numericUpDown1.TabIndex = 26;
-            this.numericUpDown1.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDown1.Visible = false;
+            this.lbID.AutoSize = true;
+            this.lbID.Location = new System.Drawing.Point(20, 170);
+            this.lbID.Name = "lbID";
+            this.lbID.Size = new System.Drawing.Size(63, 13);
+            this.lbID.TabIndex = 12;
+            this.lbID.Text = "Choose ID :";
+            this.lbID.Visible = false;
             // 
-            // label1
+            // nupdAge
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(23, 162);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(63, 13);
-            this.label1.TabIndex = 25;
-            this.label1.Text = "Choose ID :";
-            this.label1.Visible = false;
-            // 
-            // numericUpDown2
-            // 
-            this.numericUpDown2.Location = new System.Drawing.Point(92, 114);
-            this.numericUpDown2.Minimum = new decimal(new int[] {
+            this.nupdAge.Location = new System.Drawing.Point(89, 122);
+            this.nupdAge.Minimum = new decimal(new int[] {
             18,
             0,
             0,
             0});
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(100, 20);
-            this.numericUpDown2.TabIndex = 24;
-            this.numericUpDown2.Value = new decimal(new int[] {
+            this.nupdAge.Name = "nupdAge";
+            this.nupdAge.Size = new System.Drawing.Size(100, 20);
+            this.nupdAge.TabIndex = 11;
+            this.nupdAge.Value = new decimal(new int[] {
             18,
             0,
             0,
             0});
             // 
-            // checkBox1
+            // chbID
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(261, 162);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(85, 17);
-            this.checkBox1.TabIndex = 23;
-            this.checkBox1.Text = "Choose ID ?";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.chbID.AutoSize = true;
+            this.chbID.Location = new System.Drawing.Point(258, 170);
+            this.chbID.Name = "chbID";
+            this.chbID.Size = new System.Drawing.Size(85, 17);
+            this.chbID.TabIndex = 10;
+            this.chbID.Text = "Choose ID ?";
+            this.chbID.UseVisualStyleBackColor = true;
+            this.chbID.CheckedChanged += new System.EventHandler(this.chbID_CheckedChanged);
             // 
-            // textBox1
+            // tbxSurname
             // 
-            this.textBox1.Location = new System.Drawing.Point(92, 69);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 22;
+            this.tbxSurname.Location = new System.Drawing.Point(89, 77);
+            this.tbxSurname.Name = "tbxSurname";
+            this.tbxSurname.Size = new System.Drawing.Size(100, 20);
+            this.tbxSurname.TabIndex = 8;
             // 
-            // textBox2
+            // tbxName
             // 
-            this.textBox2.Location = new System.Drawing.Point(92, 14);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 21;
+            this.tbxName.Location = new System.Drawing.Point(89, 22);
+            this.tbxName.Name = "tbxName";
+            this.tbxName.Size = new System.Drawing.Size(100, 20);
+            this.tbxName.TabIndex = 7;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.rbFemale);
+            this.panel1.Controls.Add(this.rbMale);
+            this.panel1.Location = new System.Drawing.Point(258, 42);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(121, 44);
+            this.panel1.TabIndex = 6;
+            // 
+            // rbFemale
+            // 
+            this.rbFemale.AutoSize = true;
+            this.rbFemale.Location = new System.Drawing.Point(4, 24);
+            this.rbFemale.Name = "rbFemale";
+            this.rbFemale.Size = new System.Drawing.Size(59, 17);
+            this.rbFemale.TabIndex = 1;
+            this.rbFemale.TabStop = true;
+            this.rbFemale.Text = "Female";
+            this.rbFemale.UseVisualStyleBackColor = true;
+            // 
+            // rbMale
+            // 
+            this.rbMale.AutoSize = true;
+            this.rbMale.Location = new System.Drawing.Point(4, 4);
+            this.rbMale.Name = "rbMale";
+            this.rbMale.Size = new System.Drawing.Size(48, 17);
+            this.rbMale.TabIndex = 0;
+            this.rbMale.TabStop = true;
+            this.rbMale.Text = "Male";
+            this.rbMale.UseVisualStyleBackColor = true;
+            // 
+            // cbxCountry
+            // 
+            this.cbxCountry.FormattingEnabled = true;
+            this.cbxCountry.Location = new System.Drawing.Point(258, 124);
+            this.cbxCountry.Name = "cbxCountry";
+            this.cbxCountry.Size = new System.Drawing.Size(121, 21);
+            this.cbxCountry.TabIndex = 5;
+            this.cbxCountry.SelectedIndexChanged += new System.EventHandler(this.cbxCountry_SelectedIndexChanged);
+            // 
+            // lbGender
+            // 
+            this.lbGender.AutoSize = true;
+            this.lbGender.Location = new System.Drawing.Point(255, 25);
+            this.lbGender.Name = "lbGender";
+            this.lbGender.Size = new System.Drawing.Size(85, 13);
+            this.lbGender.TabIndex = 4;
+            this.lbGender.Text = "Choose gender :";
+            // 
+            // lbCountry
+            // 
+            this.lbCountry.AutoSize = true;
+            this.lbCountry.Location = new System.Drawing.Point(255, 89);
+            this.lbCountry.Name = "lbCountry";
+            this.lbCountry.Size = new System.Drawing.Size(87, 13);
+            this.lbCountry.TabIndex = 3;
+            this.lbCountry.Text = "Choose country :";
+            // 
+            // lbAge
+            // 
+            this.lbAge.AutoSize = true;
+            this.lbAge.Location = new System.Drawing.Point(20, 124);
+            this.lbAge.Name = "lbAge";
+            this.lbAge.Size = new System.Drawing.Size(32, 13);
+            this.lbAge.TabIndex = 2;
+            this.lbAge.Text = "Age :";
+            // 
+            // lbSurname
+            // 
+            this.lbSurname.AutoSize = true;
+            this.lbSurname.Location = new System.Drawing.Point(20, 80);
+            this.lbSurname.Name = "lbSurname";
+            this.lbSurname.Size = new System.Drawing.Size(55, 13);
+            this.lbSurname.TabIndex = 1;
+            this.lbSurname.Text = "Surname :";
+            // 
+            // lbName
+            // 
+            this.lbName.AutoSize = true;
+            this.lbName.Location = new System.Drawing.Point(20, 25);
+            this.lbName.Name = "lbName";
+            this.lbName.Size = new System.Drawing.Size(41, 13);
+            this.lbName.TabIndex = 0;
+            this.lbName.Text = "Name :";
+            // 
+            // tabEdit
+            // 
+            this.tabEdit.Controls.Add(this.txbEditID);
+            this.tabEdit.Controls.Add(this.lbEditRunner);
+            this.tabEdit.Controls.Add(this.btnCheck);
+            this.tabEdit.Controls.Add(this.btnEdit);
+            this.tabEdit.Controls.Add(this.nupAgeEdit);
+            this.tabEdit.Controls.Add(this.txbSurnameEdit);
+            this.tabEdit.Controls.Add(this.txbNameEdit);
+            this.tabEdit.Controls.Add(this.panel2);
+            this.tabEdit.Controls.Add(this.cbxCountryEdit);
+            this.tabEdit.Controls.Add(this.label2);
+            this.tabEdit.Controls.Add(this.label3);
+            this.tabEdit.Controls.Add(this.label4);
+            this.tabEdit.Controls.Add(this.label5);
+            this.tabEdit.Controls.Add(this.label6);
+            this.tabEdit.Location = new System.Drawing.Point(4, 22);
+            this.tabEdit.Name = "tabEdit";
+            this.tabEdit.Padding = new System.Windows.Forms.Padding(3);
+            this.tabEdit.Size = new System.Drawing.Size(406, 236);
+            this.tabEdit.TabIndex = 1;
+            this.tabEdit.Text = "Edit Runner";
+            this.tabEdit.UseVisualStyleBackColor = true;
+            // 
+            // txbEditID
+            // 
+            this.txbEditID.Location = new System.Drawing.Point(146, 9);
+            this.txbEditID.Name = "txbEditID";
+            this.txbEditID.Size = new System.Drawing.Size(100, 20);
+            this.txbEditID.TabIndex = 29;
+            // 
+            // lbEditRunner
+            // 
+            this.lbEditRunner.AutoSize = true;
+            this.lbEditRunner.Location = new System.Drawing.Point(24, 11);
+            this.lbEditRunner.Name = "lbEditRunner";
+            this.lbEditRunner.Size = new System.Drawing.Size(98, 13);
+            this.lbEditRunner.TabIndex = 28;
+            this.lbEditRunner.Text = "Choose ID for edit :";
+            // 
+            // btnCheck
+            // 
+            this.btnCheck.Location = new System.Drawing.Point(308, 6);
+            this.btnCheck.Name = "btnCheck";
+            this.btnCheck.Size = new System.Drawing.Size(75, 23);
+            this.btnCheck.TabIndex = 27;
+            this.btnCheck.Text = "Check";
+            this.btnCheck.UseVisualStyleBackColor = true;
+            this.btnCheck.Click += new System.EventHandler(this.btnCheck_Click);
+            // 
+            // btnEdit
+            // 
+            this.btnEdit.Enabled = false;
+            this.btnEdit.Location = new System.Drawing.Point(308, 209);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(75, 23);
+            this.btnEdit.TabIndex = 1;
+            this.btnEdit.Text = "Edit";
+            this.btnEdit.UseVisualStyleBackColor = true;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
+            // 
+            // nupAgeEdit
+            // 
+            this.nupAgeEdit.Location = new System.Drawing.Point(93, 138);
+            this.nupAgeEdit.Minimum = new decimal(new int[] {
+            18,
+            0,
+            0,
+            0});
+            this.nupAgeEdit.Name = "nupAgeEdit";
+            this.nupAgeEdit.Size = new System.Drawing.Size(100, 20);
+            this.nupAgeEdit.TabIndex = 24;
+            this.nupAgeEdit.Value = new decimal(new int[] {
+            18,
+            0,
+            0,
+            0});
+            // 
+            // txbSurnameEdit
+            // 
+            this.txbSurnameEdit.Location = new System.Drawing.Point(93, 93);
+            this.txbSurnameEdit.Name = "txbSurnameEdit";
+            this.txbSurnameEdit.Size = new System.Drawing.Size(100, 20);
+            this.txbSurnameEdit.TabIndex = 22;
+            // 
+            // txbNameEdit
+            // 
+            this.txbNameEdit.Location = new System.Drawing.Point(93, 38);
+            this.txbNameEdit.Name = "txbNameEdit";
+            this.txbNameEdit.Size = new System.Drawing.Size(100, 20);
+            this.txbNameEdit.TabIndex = 21;
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.radioButton1);
-            this.panel2.Controls.Add(this.radioButton2);
-            this.panel2.Location = new System.Drawing.Point(261, 34);
+            this.panel2.Controls.Add(this.rbFemaleEdit);
+            this.panel2.Controls.Add(this.rbMaleEdit);
+            this.panel2.Location = new System.Drawing.Point(262, 58);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(121, 44);
             this.panel2.TabIndex = 20;
             // 
-            // radioButton1
+            // rbFemaleEdit
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(4, 24);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(59, 17);
-            this.radioButton1.TabIndex = 1;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Female";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rbFemaleEdit.AutoSize = true;
+            this.rbFemaleEdit.Location = new System.Drawing.Point(4, 24);
+            this.rbFemaleEdit.Name = "rbFemaleEdit";
+            this.rbFemaleEdit.Size = new System.Drawing.Size(59, 17);
+            this.rbFemaleEdit.TabIndex = 1;
+            this.rbFemaleEdit.TabStop = true;
+            this.rbFemaleEdit.Text = "Female";
+            this.rbFemaleEdit.UseVisualStyleBackColor = true;
+            this.rbFemaleEdit.CheckedChanged += new System.EventHandler(this.rbFemaleEdit_CheckedChanged);
             // 
-            // radioButton2
+            // rbMaleEdit
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(4, 4);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(48, 17);
-            this.radioButton2.TabIndex = 0;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Male";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rbMaleEdit.AutoSize = true;
+            this.rbMaleEdit.Location = new System.Drawing.Point(4, 4);
+            this.rbMaleEdit.Name = "rbMaleEdit";
+            this.rbMaleEdit.Size = new System.Drawing.Size(48, 17);
+            this.rbMaleEdit.TabIndex = 0;
+            this.rbMaleEdit.TabStop = true;
+            this.rbMaleEdit.Text = "Male";
+            this.rbMaleEdit.UseVisualStyleBackColor = true;
+            this.rbMaleEdit.CheckedChanged += new System.EventHandler(this.rbMaleEdit_CheckedChanged);
             // 
-            // comboBox1
+            // cbxCountryEdit
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(261, 116);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 19;
+            this.cbxCountryEdit.FormattingEnabled = true;
+            this.cbxCountryEdit.Location = new System.Drawing.Point(262, 140);
+            this.cbxCountryEdit.Name = "cbxCountryEdit";
+            this.cbxCountryEdit.Size = new System.Drawing.Size(121, 21);
+            this.cbxCountryEdit.TabIndex = 19;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(258, 17);
+            this.label2.Location = new System.Drawing.Point(259, 41);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(85, 13);
             this.label2.TabIndex = 18;
@@ -416,7 +446,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(258, 81);
+            this.label3.Location = new System.Drawing.Point(259, 105);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(87, 13);
             this.label3.TabIndex = 17;
@@ -425,7 +455,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(23, 116);
+            this.label4.Location = new System.Drawing.Point(24, 140);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(32, 13);
             this.label4.TabIndex = 16;
@@ -434,7 +464,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(23, 72);
+            this.label5.Location = new System.Drawing.Point(24, 96);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(55, 13);
             this.label5.TabIndex = 15;
@@ -443,60 +473,208 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(23, 17);
+            this.label6.Location = new System.Drawing.Point(24, 41);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(41, 13);
             this.label6.TabIndex = 14;
             this.label6.Text = "Name :";
             // 
-            // btnEdit
+            // tabDelete
             // 
-            this.btnEdit.Location = new System.Drawing.Point(307, 185);
-            this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(75, 23);
-            this.btnEdit.TabIndex = 1;
-            this.btnEdit.Text = "Edit";
-            this.btnEdit.UseVisualStyleBackColor = true;
+            this.tabDelete.Controls.Add(this.btnDelete);
+            this.tabDelete.Controls.Add(this.txbDelete);
+            this.tabDelete.Controls.Add(this.lbDelete);
+            this.tabDelete.Controls.Add(this.btnDeleteCheck);
+            this.tabDelete.Location = new System.Drawing.Point(4, 22);
+            this.tabDelete.Name = "tabDelete";
+            this.tabDelete.Padding = new System.Windows.Forms.Padding(3);
+            this.tabDelete.Size = new System.Drawing.Size(406, 236);
+            this.tabDelete.TabIndex = 2;
+            this.tabDelete.Text = "Delete Runner";
+            this.tabDelete.UseVisualStyleBackColor = true;
             // 
-            // btnCreate
+            // btnDelete
             // 
-            this.btnCreate.Location = new System.Drawing.Point(303, 186);
-            this.btnCreate.Name = "btnCreate";
-            this.btnCreate.Size = new System.Drawing.Size(75, 23);
-            this.btnCreate.TabIndex = 14;
-            this.btnCreate.Text = "Create";
-            this.btnCreate.UseVisualStyleBackColor = true;
+            this.btnDelete.Location = new System.Drawing.Point(146, 184);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(100, 23);
+            this.btnDelete.TabIndex = 33;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Visible = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
-            // MainView
+            // txbDelete
+            // 
+            this.txbDelete.Location = new System.Drawing.Point(187, 108);
+            this.txbDelete.Name = "txbDelete";
+            this.txbDelete.Size = new System.Drawing.Size(100, 20);
+            this.txbDelete.TabIndex = 32;
+            // 
+            // lbDelete
+            // 
+            this.lbDelete.AutoSize = true;
+            this.lbDelete.Location = new System.Drawing.Point(24, 112);
+            this.lbDelete.Name = "lbDelete";
+            this.lbDelete.Size = new System.Drawing.Size(148, 13);
+            this.lbDelete.TabIndex = 31;
+            this.lbDelete.Text = "Choose Runner ID for delete :";
+            // 
+            // btnDeleteCheck
+            // 
+            this.btnDeleteCheck.Location = new System.Drawing.Point(307, 105);
+            this.btnDeleteCheck.Name = "btnDeleteCheck";
+            this.btnDeleteCheck.Size = new System.Drawing.Size(75, 23);
+            this.btnDeleteCheck.TabIndex = 30;
+            this.btnDeleteCheck.Text = "Check";
+            this.btnDeleteCheck.UseVisualStyleBackColor = true;
+            this.btnDeleteCheck.Click += new System.EventHandler(this.btnDeleteCheck_Click);
+            // 
+            // dgwRunner
+            // 
+            this.dgwRunner.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgwRunner.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.colID,
+            this.colName,
+            this.colSurname,
+            this.colAge,
+            this.colGender,
+            this.colCountry,
+            this.colLap,
+            this.colWin});
+            this.dgwRunner.Location = new System.Drawing.Point(428, 49);
+            this.dgwRunner.Name = "dgwRunner";
+            this.dgwRunner.Size = new System.Drawing.Size(639, 236);
+            this.dgwRunner.TabIndex = 1;
+            this.dgwRunner.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // colID
+            // 
+            this.colID.DataPropertyName = "ID";
+            this.colID.Frozen = true;
+            this.colID.HeaderText = "ID";
+            this.colID.Name = "colID";
+            // 
+            // colName
+            // 
+            this.colName.DataPropertyName = "Name";
+            this.colName.Frozen = true;
+            this.colName.HeaderText = "Name";
+            this.colName.Name = "colName";
+            // 
+            // colSurname
+            // 
+            this.colSurname.DataPropertyName = "Surname";
+            this.colSurname.Frozen = true;
+            this.colSurname.HeaderText = "Surname";
+            this.colSurname.Name = "colSurname";
+            // 
+            // colAge
+            // 
+            this.colAge.DataPropertyName = "Age";
+            this.colAge.Frozen = true;
+            this.colAge.HeaderText = "Age";
+            this.colAge.Name = "colAge";
+            // 
+            // colGender
+            // 
+            this.colGender.DataPropertyName = "Gender";
+            this.colGender.Frozen = true;
+            this.colGender.HeaderText = "Gender";
+            this.colGender.Name = "colGender";
+            // 
+            // colCountry
+            // 
+            this.colCountry.DataPropertyName = "Country";
+            this.colCountry.Frozen = true;
+            this.colCountry.HeaderText = "Country";
+            this.colCountry.Name = "colCountry";
+            // 
+            // colLap
+            // 
+            this.colLap.DataPropertyName = "Lap";
+            this.colLap.Frozen = true;
+            this.colLap.HeaderText = "Lap";
+            this.colLap.Name = "colLap";
+            this.colLap.Visible = false;
+            // 
+            // colWin
+            // 
+            this.colWin.DataPropertyName = "Win";
+            this.colWin.HeaderText = "Win";
+            this.colWin.Name = "colWin";
+            this.colWin.Visible = false;
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripNewRace,
+            this.toolStripSaveRace,
+            this.toolStripLoadRace});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(1093, 24);
+            this.menuStrip1.TabIndex = 3;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // toolStripNewRace
+            // 
+            this.toolStripNewRace.Name = "toolStripNewRace";
+            this.toolStripNewRace.Size = new System.Drawing.Size(71, 20);
+            this.toolStripNewRace.Text = "Start Race";
+            this.toolStripNewRace.Click += new System.EventHandler(this.toolStripNewRace_Click);
+            // 
+            // toolStripSaveRace
+            // 
+            this.toolStripSaveRace.Name = "toolStripSaveRace";
+            this.toolStripSaveRace.Size = new System.Drawing.Size(71, 20);
+            this.toolStripSaveRace.Text = "Save Race";
+            this.toolStripSaveRace.Click += new System.EventHandler(this.toolStripSaveRace_Click);
+            // 
+            // toolStripLoadRace
+            // 
+            this.toolStripLoadRace.Name = "toolStripLoadRace";
+            this.toolStripLoadRace.Size = new System.Drawing.Size(73, 20);
+            this.toolStripLoadRace.Text = "Load Race";
+            // 
+            // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(433, 287);
+            this.ClientSize = new System.Drawing.Size(1093, 301);
+            this.Controls.Add(this.dgwRunner);
             this.Controls.Add(this.tabMain);
-            this.Name = "MainView";
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
+            this.Name = "Form1";
             this.Text = "Form1";
             this.tabMain.ResumeLayout(false);
-            this.tpgAge.ResumeLayout(false);
-            this.tpgAge.PerformLayout();
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
+            this.tabCreate.ResumeLayout(false);
+            this.tabCreate.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nupdID)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nupdAge)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nupdAge)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nupdID)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
+            this.tabEdit.ResumeLayout(false);
+            this.tabEdit.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nupAgeEdit)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.tabDelete.ResumeLayout(false);
+            this.tabDelete.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgwRunner)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.TabControl tabMain;
-        private System.Windows.Forms.TabPage tpgAge;
-        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabPage tabCreate;
+        private System.Windows.Forms.TabPage tabEdit;
         private System.Windows.Forms.Label lbGender;
         private System.Windows.Forms.Label lbCountry;
         private System.Windows.Forms.Label lbAge;
@@ -514,21 +692,39 @@
         private System.Windows.Forms.Label lbID;
         private System.Windows.Forms.Button btnCreate;
         private System.Windows.Forms.Button btnEdit;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.NumericUpDown nupAgeEdit;
+        private System.Windows.Forms.TextBox txbSurnameEdit;
+        private System.Windows.Forms.TextBox txbNameEdit;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.RadioButton rbFemaleEdit;
+        private System.Windows.Forms.RadioButton rbMaleEdit;
+        private System.Windows.Forms.ComboBox cbxCountryEdit;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.DataGridView dgwRunner;
+        private System.Windows.Forms.TextBox txbEditID;
+        private System.Windows.Forms.Label lbEditRunner;
+        private System.Windows.Forms.Button btnCheck;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem toolStripNewRace;
+        private System.Windows.Forms.ToolStripMenuItem toolStripSaveRace;
+        private System.Windows.Forms.ToolStripMenuItem toolStripLoadRace;
+        private System.Windows.Forms.TabPage tabDelete;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.TextBox txbDelete;
+        private System.Windows.Forms.Label lbDelete;
+        private System.Windows.Forms.Button btnDeleteCheck;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colSurname;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colAge;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colGender;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colCountry;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colLap;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colWin;
     }
 }
 

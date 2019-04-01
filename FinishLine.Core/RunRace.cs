@@ -6,16 +6,26 @@ using System.Threading.Tasks;
 
 namespace FinishLine.Core
 {
-    static class RunRace
+    public class RunRace
     {
-        private static Dictionary<int, Runner> RunnerList = new Dictionary<int, Runner>();
-
-        private static void AddRunner()
+        //create dictionary RunneList
+        public Dictionary<int, Runner> RunnerList = new Dictionary<int, Runner>();
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="iD"></param>
+        /// <param name="name"></param>
+        /// <param name="surname"></param>
+        /// <param name="age"></param>
+        /// <param name="gender"></param>
+        /// <param name="country"></param>
+        public void AddRunner(int iD, string name,string surname, int age, string gender, string country)
         {
-            Runner r = new Runner();
+            Runner r = new Runner(iD,name,surname,age,gender,country);
             RunnerList.Add(r.ID, r);
-        }
-        private static bool DeleteRunner(int id)
+        }                
+        
+        public bool DeleteRunner(int id)
         {
             if (CheckRunner(id))
             {
@@ -27,11 +37,15 @@ namespace FinishLine.Core
                 return false;
             }         
         }
-        private static void EditRunner(int id)
+        public void EditRunner(int id, string name, string surname, int age, string gender, string country)
         {
             if (CheckRunner(id))
-            {               
-                
+            {                
+                RunnerList[id].Name = name;
+                RunnerList[id].Surname = surname;
+                RunnerList[id].Age = age;
+                RunnerList[id].Country = country;
+                RunnerList[id].Gender = gender;
             }
             else
             {
@@ -39,7 +53,7 @@ namespace FinishLine.Core
             }
 
         }
-        private static bool CheckRunner(int id)
+        public bool CheckRunner(int id)
         {
             if (RunnerList.ContainsKey(id))
             {                
@@ -50,6 +64,18 @@ namespace FinishLine.Core
                 return false;
             }
         }
-        
+
+
+        public int GetID()
+        {
+            Random rand = new Random();
+            int someID = rand.Next(1, 999);
+            while (CheckRunner(someID))
+            {                
+                someID = rand.Next(1, 999);
+            }
+            return someID;
+        }
+
     }
 }

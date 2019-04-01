@@ -6,40 +6,50 @@ using System.Threading.Tasks;
 
 namespace FinishLine.Core
 {
-    class Runner
+    public class Runner
     {
 
-        public int ID { get; }
-        public string Name { get; private set; }
-        public int Age { get; private set; }
-        public bool Gender { get; private set; }
-        public Country Country { get; set; }
+        public int ID { get; set; }
+        public string Name { get; set; }
+        public string Surname { get;  set; }
+        public int Age { get;  set; }
+        public string Gender { get;  set; }
+        //public Country Country { get; set; }
+        public string Country { get; set; }
         public int Lap { get; set; }
         public bool Win { get; set; }
-        public Runner(int iD, string name, int age, bool gender, Country country)
-        {
-            ID = iD;
-            Name = name;
-            Age = age;
-            Gender = gender;
-            Country = country;
-            Lap = 0;
-            Win = false;
-        }
+        //public Runner(int iD, string name, string surname, int age, Gender gender, Country country)
+        //{
+        //    ID = iD;
+        //    Name = name;
+        //    Surname = surname;
+        //    Age = age;
+        //    Gender = gender;
+        //    Country = country;
+        //    Lap = 0;
+        //    Win = false;
+        //}
 
         public Runner()
         {
         }
 
-        private void EditRunner(string name,int age, bool gender, Country country, int lap, bool win)
+        public Runner(int iD, string name, string surname, int age, string gender, string country)
         {
+            ID = iD;
             Name = name;
+            Surname = surname;
             Age = age;
             Gender = gender;
             Country = country;
-            Lap = lap;
-            Win = win;
         }
+                
+        //public enum Gender
+        //{
+        //    men,
+        //    women
+        //}
+
 
     }
 }
