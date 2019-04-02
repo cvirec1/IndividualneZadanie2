@@ -12,7 +12,13 @@ namespace FinishLine.Core
         public string SlovakShortName { get; private set; }
         public string EnglishShortName { get; private set; }
         public string OfficialShortName { get; private set; }
-
+        /// <summary>
+        /// Constructor for country.
+        /// </summary>
+        /// <param name="countryCode"></param>
+        /// <param name="slovakShortName"></param>
+        /// <param name="englishShortName"></param>
+        /// <param name="officialShortName"></param>
         public Country(string countryCode, string slovakShortName, string englishShortName, string officialShortName)
         {
             CountryCode = countryCode;

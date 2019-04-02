@@ -19,8 +19,7 @@ namespace FinishLine
             RunRace newRunRace = new RunRace();
             DateTime time = new DateTime();
             newRunRace.StartRace(FileData.LoadRunnerList(pathfile), time);
-            
-            //dgwRaceLap.DataSource = FileData.LoadRunnerList(pathfile).Values.ToList<Runner>();            
+                                 
         }
     }
 }

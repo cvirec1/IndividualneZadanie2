@@ -10,7 +10,11 @@ namespace FinishLine.Core
 {
     public static class LoadCountry
     {
-        
+        /// <summary>
+        /// Method to load list of countries from csv file.
+        /// </summary>
+        /// <param name="path"></param>
+        /// <returns></returns>
         public static List<Country> LoadCoutries(string path)
         {
             List<Country> ret = new List<Country>(250);

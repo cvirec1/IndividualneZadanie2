@@ -199,19 +199,7 @@ namespace FinishLine
         private void toolStripSaveRace_Click(object sender, EventArgs e)
         {
             FileData.SaveFile(@"C:\Users\Public\Documents\data.txt", runRace.RunnerList);
-        }
-
-        //private void nupIdEdit_ValueChanged(object sender, EventArgs e)
-        //{
-        //    if (runRace.CheckRunner((int)nupIdEdit.Value))
-        //    {
-        //        nupIdEdit.BackColor = Color.Red;
-        //    }
-        //    else
-        //    {
-        //        nupIdEdit.BackColor = Color.Green;
-        //    }
-        //}
+        }                
 
         private void nupdID_ValueChanged(object sender, EventArgs e)
         {
